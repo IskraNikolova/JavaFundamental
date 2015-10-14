@@ -1,8 +1,15 @@
+package com.company;
 import java.util.Scanner;
 
+/*
+ Write a program that converts the decimal number system to the ghetto numeral system.
+ In the ghetto, numbers are represented as following:
+ */
 public class GhettoNumeralSystem {
+
     public static void main(String[] args) {
 
+        System.out.print("Write number: ");
         Scanner input = new Scanner(System.in);
         String number = input.nextLine();
         for (int c = 0; c < number.length(); c++) {
