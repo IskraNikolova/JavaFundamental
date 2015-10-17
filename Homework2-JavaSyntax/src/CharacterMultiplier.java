@@ -13,6 +13,9 @@ public class CharacterMultiplier {
         Scanner input = new Scanner(System.in);
         String first = input.next();
         String second = input.next();
+        characterMultiply(first, second);
+    }
+    public static void characterMultiply(String first, String second){
         int max = Math.max(first.length(), second.length());
         int min = Math.min(first.length(), second.length());
         int sum = 0;
