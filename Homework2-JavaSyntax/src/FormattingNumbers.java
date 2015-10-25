@@ -15,7 +15,8 @@ public class FormattingNumbers {
         int a = input.nextInt();
         double b = input.nextDouble();
         double c = input.nextDouble();
-
-        System.out.printf(String.format("|%1$-10s|%2$s|%3$10.2f|%4$-10.3f|",Integer.toHexString(a), Integer.toBinaryString(a), b, c));
+        String res = String.format("%10s", Integer.toBinaryString(a & 0xFF)).replace(' ', '0');
+        System.out.printf(String.format("|%1$-10s|%2$s|%3$10.2f|%4$-10.3f|", Integer.toHexString(a),res,
+                b, c));
     }
 }
