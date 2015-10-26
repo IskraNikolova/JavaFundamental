@@ -1,3 +1,5 @@
+package homeworkCollection;
+
 import java.util.*;
 
 /*
@@ -29,7 +31,7 @@ public class Problem11MostFrequentWord {
         int maxValueInMap = (Collections.max(wordsCount.values()));
 
         for (Map.Entry<String, Integer> entry : wordsCount.entrySet()) {
-            if (entry.getValue()==maxValueInMap) {
+            if (entry.getValue()== maxValueInMap) {
                 System.out.printf("%s -> %s times\n",entry.getKey(), entry.getValue());
             }
         }

@@ -1,3 +1,5 @@
+package homeworkCollection;
+
 import java.util.Scanner;
 /*
 Write a program to find how many times given string appears in given text as substring.
